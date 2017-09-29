@@ -1,0 +1,54 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">
+    {{ menuItemsCtrl.menuItems.category.name}} Menu
+  </h2>
+  <div class="text-center">
+    {{ menuItemsCtrl.menuItems.category.special_instructions}}
+  </div>
+<div class="menu-item-tile col-md-6" ng-repeat="menuItem in menuItemsCtrl.menuItems">
+	<!-- <div class="menu-item-tile col-md-6" ng-repeat="menuItem in menuItem1.menu_items"> -->
+	  <div class="row">
+	    <div class="col-sm-5">
+	      <div class="menu-item-photo">
+	        <div>{{menuItem.short_name}}</div>
+	        <img class="img-responsive" width="250" height="150" src="images/menu-categorys/{{menuItem.short_name}}.jpg" alt="{{menuItem.name}}">
+	      </div>
+	      <div class="menu-item-price">{{menuItem.price_small | currency}}<span> {{menuItem.small_portion_name}}</span> {{menuItem.price_large | currency}} <span>{{menuItem.large_portion_name}}</span></div>
+	    </div>
+	    <div class="menu-item-description col-sm-7">
+	      <h3 class="menu-item-title">{{menuItem.name}}</h3>
+	      <p class="menu-item-details">{{menuItem.description}}</p>
+	    </div>
+	  </div>
+	  <hr class="visible-xs">
+	<!-- </div> -->
+</div>
+</div>
+
+
+<!-- <div class="container">
+  <h2 id="menu-categories-title" class="text-center">
+    {{ menuItemsCtrl.menuItems.category.name}} Menu
+  </h2>
+  <div class="text-center">
+    {{ menuItemsCtrl.menuItems.category.special_instructions}}
+  </div>
+<div  ng-repeat="menuItem1 in menuItemsCtrl.menuItems">
+	<div class="menu-item-tile col-md-6" ng-repeat="menuItem in menuItem1.menu_items">
+	  <div class="row">
+	    <div class="col-sm-5">
+	      <div class="menu-item-photo">
+	        <div>{{menuItem.short_name}}</div>
+	        <img class="img-responsive" width="250" height="150" src="images/menu-categorys/{{menuItem.short_name}}.jpg" alt="{{menuItem.name}}">
+	      </div>
+	      <div class="menu-item-price">{{menuItem.price_small | currency}}<span> {{menuItem.small_portion_name}}</span> {{menuItem.price_large | currency}} <span>{{menuItem.large_portion_name}}</span></div>
+	    </div>
+	    <div class="menu-item-description col-sm-7">
+	      <h3 class="menu-item-title">{{menuItem.name}}</h3>
+	      <p class="menu-item-details">{{menuItem.description}}</p>
+	    </div>
+	  </div>
+	  <hr class="visible-xs">
+	</div>
+</div>
+</div> -->

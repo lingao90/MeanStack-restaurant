@@ -1,0 +1,22 @@
+[
+         {
+            "img" : "specials-tile_1.jpg",
+            "title" : "Orange Chicken",
+            "sentence" : "chunks of chicken, breaded and deep-fried with sauce containing orange peels; white meat by request: for pint $1 extra, for large $2 extra"
+         },
+      	
+         {
+            "img" : "menu-tile.jpg",
+            "title" : "Chicken Cashewnuts",
+            "sentence" : "diced chicken with waterchestnuts, green peppers, and celery, and cashewnuts; white meat by request: for pint $1 extra, for large $2 extra"
+         },
+      	
+         
+      	
+         {
+            "img" : "menu-tile_1.jpg",
+            "title" : "Chicken Eggplant with Garlic Sauce",
+            "sentence" : "white meat chicken, string beans, waterchestnuts, mushrooms, and eggplant, in garlic sauce"
+         }
+ ]
+

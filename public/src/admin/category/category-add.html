@@ -1,0 +1,53 @@
+<h2>Category  Add</h2>
+
+<form name="gggg.form" novalidate>
+  <div class="form-group">
+    <div>
+      <!-- <img class="img-responsive img-rounded admin-img"
+       ng-if="!$ctrl.file"
+       src="../images/menu-categorys/{{$ctrl.menuItem.short_name}}.jpg?{{$ctrl.cacheBuster}}">
+ -->
+      <div class="form-group">
+        <img class="img-responsive img-rounded admin-img"
+          ngf-src="gggg.file">
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-default" ng-model="gggg.file" ngf-select="" >Choose</button>
+        <span class="small">Image must be 250w X 150h pixels</span>
+      </div>
+
+    </div>
+  </div>
+
+  <h1>{{gggg.test}}</h1>
+  <div class="form-group" ng-class="{'has-error' : $ctrl.form.name.$invalid}">
+    <label class="control-label">Name</label>
+    <input type="text" ng-model="gggg.category.name" name="name" class="form-control" placeholder="Name" required>
+    
+  </div>
+
+  <div class="form-group" ng-class="{'has-error' : $ctrl.form.description.$invalid}">
+        <label class="control-label">short_name</label>
+        <textarea class="form-control" name="description" ng-model="gggg.category.short_name" required></textarea>
+        
+  </div>
+  <div class="form-group" ng-class="{'has-error' : $ctrl.form.description.$invalid}">
+        <label class="control-label">special_instructions</label>
+        <textarea class="form-control" name="description" ng-model="gggg.category.special_instructions" required></textarea>
+        
+  </div>
+  <div class="form-group" ng-class="{'has-error' : $ctrl.form.description.$invalid}">
+        <label class="control-label">id</label>
+        <textarea class="form-control" name="description" ng-model="gggg.category.id" required></textarea>
+        
+  </div>
+
+  
+
+<div class="pull-right">
+  <button class="btn btn-success" ng-click="gggg.save()" >Save</button>
+  <button class="btn btn-default" ng-click="$ctrl.cancel()">Cancel</button>
+</div>
+
+</form>

@@ -1,0 +1,24 @@
+{
+  "name": "hcm-project1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-fileupload": "^0.1.4",
+    "jsonwebtoken": "^7.4.2",
+    "mongoose": "^4.11.6",
+    "morgan": "~1.8.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "pug": "~2.0.0-beta11",
+    "serve-favicon": "~2.4.2"
+  }
+}
